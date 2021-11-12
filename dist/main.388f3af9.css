@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+body {
+  overflow: hidden;
+  /* 去掉滚动条 */
+}
+
+body > .page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body > .page > section {
+  width: 50vw;
+  height: 50vh;
+}
+#app1 {
+  border: 1px solid red;
+  width: 50vw;
+  height: 50vh;
+}
+
+#app1 .output {
+  /* border: 1px solid blue; */
+}
+#app1 .actions {
+  /* border: 1px solid green; */
+}
+#app2 {
+  border: 1px solid blue;
+}
+
+#app2 .tab-bar {
+  display: flex;
+}
+#app2 .tab-bar > li {
+  border: 1px solid rgb(232, 235, 228);
+  width: 50%;
+}
+#app2 .tab-bar > li.selected {
+  background: rgb(170, 187, 18);
+  color: white;
+}
+
+/* #app2 .tab-content {
+  } */
+#app2 .tab-content > li {
+  display: none;
+}
+#app2 .tab-content > li.active {
+  display: block;
+}
+#app3 {
+  border: 1px solid rgb(27, 202, 11);
+}
+#app3 .square {
+  background: brown;
+  border: 1px solid brown;
+  margin-top: 10vw;
+  margin-left: 5vw;
+  width: 6vw;
+  height: 6vw;
+  transition: transform 2s;
+}
+
+#app3 .square.active {
+  transform: translateX(30vw);
+}
+#app4 {
+}
+
+@keyframes change {
+  0% {
+    background: rgb(5, 151, 63);
+  }
+  100% {
+    background: blueviolet;
+  }
+}
+
+#app4 .circle {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 50%;
+  border: 2px solid rgb(3, 7, 0);
+}
+
+#app4 .circle.active {
+  animation: change 2s infinite alternate;
+}

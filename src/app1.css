@@ -1,0 +1,12 @@
+#app1 {
+  border: 1px solid red;
+  width: 50vw;
+  height: 50vh;
+}
+
+#app1 .output {
+  /* border: 1px solid blue; */
+}
+#app1 .actions {
+  /* border: 1px solid green; */
+}
